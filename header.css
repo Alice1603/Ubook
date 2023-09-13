@@ -1,0 +1,125 @@
+html, body{
+    box-sizing: border-box;
+    background: #222229;
+    margin: 0;
+    height: 100%;
+    scrollbar-width: thin;
+    scrollbar-color: #636373 #222229;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header{
+    top: 0;
+    position: fixed;
+    background: black;
+    width: 100%;
+    box-shadow: 0 0 15px black;
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+/*---------------------------------ПОИСК----------------------------------------------------*/
+.lupa{
+    border-radius: 50%;
+    padding: 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-left: 100px;
+    height: 50%;
+    max-height: 60px;
+}
+
+.lupa img{
+    height: 95%;
+    margin-left: 5px;
+    aspect-ratio: 1/1;
+}
+
+.search_by{
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 10px;
+}
+.search_by input{
+    border: 0;
+    background: rgba(0, 0, 0, 0);
+    border-bottom: 1px solid ghostwhite;
+    color: ghostwhite;
+    height: 100%;
+    font-size: large;
+    min-width: 60px;
+    width: 50%;
+}
+.search_by input:focus{
+    outline: none;
+}
+.choose_g{
+    color: ghostwhite;
+    border-radius: 12px;
+    height: 90%;
+    font-family: sans-serif;
+    padding-left: 10px;
+    background: linear-gradient(45deg, dodgerblue, deepskyblue, #48f0ff);
+    border: 0;
+    min-width: 90px;
+    width: 40%;
+    max-width: 200px;
+}
+.choose_by{
+    width: 40%;
+    border: 1px solid deepskyblue;
+    color: deepskyblue;
+    background: ghostwhite;
+}
+.choose_by:checked{
+    background: lightskyblue;
+    color: ghostwhite;
+    transform: scale(1.05);
+}
+.x{
+    height: 90%;
+    border: 0;
+    font-size: large;
+    background: rgba(0, 0, 0, 0);
+    text-align: center;
+    color: gainsboro;
+    margin-right: 6px;
+    margin-left: 3px;
+}
+.x:hover{
+    color: white;
+}
+/*--------------------ЛОГО--------------------------------------------*/
+.logo{
+    height: 70%;
+    border-radius: 50%;
+    background: #333340;
+    margin-right: 20px;
+    transition: 0.2s;
+    border: 2px solid deepskyblue;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+
+.entred{
+    color: ghostwhite;
+    font-size: large;
+    font-family: sans-serif;
+    margin-right: 15px;
+    opacity: 0.8;
+}
+.entred:hover{
+    text-decoration-line: underline;
+}

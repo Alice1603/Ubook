@@ -1,0 +1,196 @@
+.panel {
+    width: 400px;
+    min-width: 400px;
+    position: fixed;
+    height: 4%;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    left: -400px;
+    padding: 15px 20px;
+    transition: left 0.3s;
+    background: black;
+    z-index: 2000;
+    display: flex;
+    flex-direction: column;
+}
+
+.panel_user_logo{
+    align-self: center;
+    margin-top: 20px;
+    border-radius: 50%;
+    background: #333340;
+    margin-right: 20px;
+    transition: 0.2s;
+    border: 2px solid #00bfff;
+    width: 90px;
+}
+.panel_user_logo:hover{
+    transform: scale(1.1);
+}
+.panel h1{
+    align-self: center;
+    color: ghostwhite;
+    font-size: x-large;
+    font-family: sans-serif;
+}
+.panel_user_name{
+    color: ghostwhite;
+    text-decoration-line: none;
+}
+.panel_user_name:hover{
+    color: lightskyblue;
+    text-decoration-line: underline;
+}
+.panel_logo {
+    position: absolute;
+    left: 400px;
+    padding: 5px 20px;
+    color: deepskyblue;
+    cursor: pointer;
+    line-height: 1;
+    z-index: 2001;
+    transition: color .25s ease-in-out;
+    font-family: sans-serif;
+}
+.panel_logo img{
+    display: flex;
+    height: 100%;
+}
+.panel_logo:after {
+    content: ' ';
+    height: 50px;
+}
+
+
+.panel_logo:hover {
+    color: #f4f4f4;
+}
+
+
+[id='panel_logo'] {
+    position: absolute;
+    display: none;
+}
+
+
+[id='panel_logo']:checked ~ .panel > .panel_logo {
+    left: auto;
+    right: 2px;
+}
+
+
+[id='panel_logo']:checked ~ .panel {
+    left: 0;
+    box-shadow:4px 0 20px 0 rgba(0,0,0, 0.5);
+    overflow-y: auto;
+    height: 100%;
+}
+
+[id='panel_logo']:checked ~ .panel .panel_logo img{
+    display: none;
+}
+
+[id='panel_logo']:checked ~ .panel > .panel_logo:after {
+    content: '\2715';
+    display: flex;
+    height: 50px;
+}
+
+
+
+
+.menu_listing {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu_listing > li {
+    font-size: inherit;
+    margin-left: 20px;
+    line-height: 2.5;
+    opacity: 0;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transition: opacity .5s .1s, -webkit-transform .5s .1s;
+    -moz-transition: opacity .5s .1s, -moz-transform .5s .1s;
+    -ms-transition: opacity .5s .1s, -ms-transform .5s .1s;
+    transition: opacity .5s .1s, transform .5s .1s;
+}
+
+[id='panel_logo']:checked ~ .panel > .menu_listing > li {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+}
+.menu_listing > li:nth-child(2) {
+    -webkit-transition: opacity .5s .2s, -webkit-transform .5s .2s;
+    transition: opacity .5s .2s, transform .5s .2s;
+}
+.menu_listing > li:nth-child(3) {
+    -webkit-transition: opacity .5s .3s, -webkit-transform .5s .3s;
+    transition: opacity .5s .3s, transform .5s .3s;
+}
+.menu_listing > li:nth-child(4) {
+    -webkit-transition: opacity .5s .4s, -webkit-transform .5s .4s;
+    transition: opacity .5s .4s, transform .5s .4s;
+}
+
+.menu_listing a{
+    display: inline-block;
+    position: relative;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+    color: #dadada;
+    width: 100%;
+    text-decoration: none;
+    transition: color .5s ease, padding .5s ease;
+}
+.menu_listing a:hover,
+.menu_listing a:focus{
+    color: white;
+    padding-left: 15px;
+}
+.menu_listing a:before{
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    -webkit-transition: width 0s ease;
+    transition: width 0s ease;
+}
+.menu_listing a:after{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    background: deepskyblue;
+    -webkit-transition: width .5s ease;
+    transition: width .5s ease;
+}
+.menu_listing a:hover:before{
+    width: 0;
+    background: deepskyblue;
+    -webkit-transition: width .5s ease;
+    transition: width .5s ease;
+}
+.menu_listing a:hover:after{
+    width: 0;
+    background: transparent;
+    -webkit-transition: width 0s ease;
+    transition: width 0s ease;
+}

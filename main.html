@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ubook</title>
+    <link rel="icon" type="image/x-icon" href="Header/pictures/icon.png">
+    <link rel="stylesheet" type="text/css" href="Header/header.css">
+    <link rel="stylesheet" type="text/css" href="Footer/footer.css">
+    <link rel="stylesheet" type="text/css" href="Header/panel.css">
+    <link rel="stylesheet" type="text/css" href="Header/entry_registration.css">
+</head>
+
+<body>
+<header id="head">
+    <div class="lupa" id="lupa">
+        <img src="Header/pictures/лупа.png" onclick="lupa()">
+        <div class="search_by" id="search_by">
+            <input id="upper_search" placeholder="Поиск">
+            <select class="choose_g" onchange="" id="choose_g">
+                <option class="choose_by">Поиск по названию</option>
+                <option class="choose_by">Поиск по автору</option>
+                <option class="choose_by">Поиск по издательству</option>
+            </select>
+            <button class="x" onclick="sea()" id="x">X</button>
+        </div>
+    </div>
+    <img src="Header/pictures/logo.png" class="logo" onclick="location.href='personal.html'">
+</header>
+
+    <input type="checkbox" id="panel_logo" hidden>
+    <nav class="panel">
+        <label for="panel_logo" class="panel_logo" onclick><img src="Header/pictures/меню.png"></label>
+        <img class="panel_user_logo" src="Header/pictures/logo.png" onclick="location.href='personal.html'">
+        <h1><a class="panel_user_name" href='personal.html'>User023750684</a></h1>
+        <ul class="menu_listing">
+            <li><a href="index.html">Главная</a>
+            <li><a href="catalog.html">Каталог</a>
+            <li><a href="settings.html">Настройки</a>
+            <li><a href="#footer">Контакты</a>
+        </ul>
+    </nav>
+<div class="black">
+    <button class="x1" onclick="close_black(0)">X</button>
+    <div class="entry">
+        <div class="entry_text">Вход</div>
+        <input class="entry_inp" placeholder="Введите никнейм">
+        <input class="entry_inp" type="password" placeholder="Введите пароль">
+        <button class="enter1" onclick="close_black(1)">Зарегистрироваться</button>
+        <div class="entry_reg" onclick="change_reg()">Нет аккаунта? Зарегистрируйтесь</div>
+    </div>
+    <div class="registration">
+        <div class="entry_text">Регистрация</div>
+        <input class="entry_inp" placeholder="Введите никнейм">
+        <div class="entry_name">
+            <input class="entry_inp" placeholder="Введите имя">
+            <input class="entry_inp" placeholder="Введите фамилию">
+        </div>
+        <div class="entry_t">Дата рождения</div>
+        <div class="selects">
+            <select class="entry_day" onchange=""></select>
+            <select class="entry_month" onchange=""></select>
+            <select class="entry_year" onchange=""></select>
+        </div>
+        <input class="entry_inp" type="password" placeholder="Придумайте пароль">
+        <input class="entry_inp" type="password" placeholder="Продублируйте пароль">
+        <button class="enter2" onclick="close_black(1)">Зарегистрироваться</button>
+    </div>
+</div>
+<section>
+
+</section>
+
+<footer id="footer">
+  <div class="footer_over">
+    <div class="footer_sector">
+      <h4 class="footer_head">Полезные ссылки</h4>
+      <div class="footer_listing">
+        <p class="footer_text1">Доставка</p>
+        <p class="footer_text1">Оплата</p>
+        <p class="footer_text1">Акции</p>
+        <p class="footer_text1">Политика конфиденциальности</p>
+      </div>
+    </div>
+    <div class="footer_sector">
+      <h4 class="footer_head">Оплата</h4>
+      <div class="footer_listing">
+        <p class="footer_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper justo, nec, pellentesque.</p>
+        <div class="partners">
+          <img src="Footer\visa.png" class="partner">
+          <img src="Footer\mastercard.png" class="partner">
+        </div>
+      </div>
+    </div>
+    <div class="footer_sector">
+      <h4 class="footer_head">Контакты</h4>
+      <div class="footer_listing">
+        <p class="footer_text2">8 (963) 760-39-42</p>
+        <p class="footer_text2">8 (812) 234-56-55</p>
+        <p class="footer_text2">ojjo@ojjo.ru</p>
+      </div>
+    </div>
+    <div class="footer_sector">
+      <h4 class="footer_head">Социальные сети</h4>
+      <div class="footer_listing">
+        <p class="footer_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper justo, nec, pellentesque.</p>
+        <div class="footer_net">
+          <img src="Footer\youtube.png" class="footer_n">
+          <img src="Footer\vk.png" class="footer_n">
+          <img src="Footer\facebook.png" class="footer_n">
+          <img src="Footer\telegram.png" class="footer_n">
+          <img src="Footer\e.png" class="footer_n">
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="footer_under">
+    2021© Student MIREA. ALL RIGHTS RESERVED
+  </p>
+</footer>
+<script src="Header/lupa.js"></script>
+<script src="Header/header_size.js"></script>
+<script src="Header/panel.js"></script>
+<script src="Header/entry_registration.js"></script>
+</body>
+</html>

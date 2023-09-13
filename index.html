@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ubook</title>
+    <link rel="icon" type="image/x-icon" href="Header/pictures/icon.png">
+    <link rel="stylesheet" type="text/css" href="Header/header.css">
+    <link rel="stylesheet" type="text/css" href="Footer/footer.css">
+    <link rel="stylesheet" type="text/css" href="Header/panel.css">
+    <link rel="stylesheet" type="text/css" href="Header/entry_registration.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+<header id="head">
+
+</header>
+
+<input type="checkbox" id="panel_logo" hidden>
+<nav class="panel">
+    <label for="panel_logo" class="panel_logo" onclick><img src="Header/pictures/меню.png"></label>
+    <img class="panel_user_logo" src="Header/pictures/logo.png" onclick="location.href='personal.html'">
+    <h1><a class="panel_user_name" href='personal.html'>User023750684</a></h1>
+    <ul class="menu_listing">
+        <li><a href="index.html">Главная</a>
+        <li><a href="catalog.html">Каталог</a>
+        <li><a href="settings.html">Настройки</a>
+        <li><a href="#footer">Контакты</a>
+    </ul>
+</nav>
+<div class="black">
+    <button class="x1" onclick="close_black(0)">X</button>
+    <div class="entry">
+        <div class="entry_text">Вход</div>
+        <input class="entry_inp" placeholder="Введите никнейм">
+        <input class="entry_inp" type="password" placeholder="Введите пароль">
+        <button class="enter1" onclick="close_black(1)">Войти</button>
+        <div class="entry_reg" onclick="change_reg()">Нет аккаунта? Зарегистрируйтесь</div>
+    </div>
+    <div class="registration">
+        <div class="entry_text">Регистрация</div>
+        <input class="entry_inp" placeholder="Введите никнейм">
+        <div class="entry_name">
+            <input class="entry_inp" placeholder="Введите имя">
+            <input class="entry_inp" placeholder="Введите фамилию">
+        </div>
+        <div class="entry_t">Дата рождения</div>
+        <div class="selects">
+            <select class="entry_day" onchange=""></select>
+            <select class="entry_month" onchange=""></select>
+            <select class="entry_year" onchange=""></select>
+        </div>
+        <input class="entry_inp" type="password" placeholder="Придумайте пароль">
+        <input class="entry_inp" type="password" placeholder="Продублируйте пароль">
+        <button class="enter2" onclick="close_black(1)">Зарегистрироваться</button>
+    </div>
+</div>
+<section class="info">
+    <div class="welcome">
+        <div class="welcome_text">Добро пожаловать в крупнейший книжный магазин <span>Ubook</span></div>
+        <div class="welcome_about">Фантастические миры множества книг уже ждут вас. До конца сентября действуют скидки на учебники, детские книги и школьную литературу. Успейте купить все необходимое для детей и привейте им любовь к книгам с детства.</div>
+    </div>
+    <img src="Another/top_books.png">
+</section>
+<section class="sect2">
+    <h1 class="heads">Популярные жанры</h1>
+    <div class="popular_genres">
+        <div class="genre_card">
+            <div class="content" onmouseover="On(0)" onmouseout="Off(0)">
+                <div class="outside">
+                    <div class="front">
+                        <div class="image">
+                            <img src="Genres/dragon.png" class="img">
+                        </div>
+                        <p class="genre">Фэнтези</p>
+                    </div>
+                    <div class="back">
+                        <div class="im"></div>
+                    </div>
+                </div>
+                <div class="inside">
+                    <h1>Фэнтези</h1>
+                    <p class="in">Жанр спекулятивной фантастики с участием магических элементов, действие которого обычно происходит в вымышленной вселенной и иногда вдохновляется мифологией и фольклором.</p>
+                    <button onclick="location.href='catalog.html'">Подробнее >></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="genre_card">
+            <div class="content" onmouseover="On(1)" onmouseout="Off(1)">
+                <div class="outside">
+                    <div class="front">
+                        <div class="image">
+                            <img src="Genres/heart.png" class="img">
+                        </div>
+                        <p class="genre">Романтика</p>
+                    </div>
+                    <div class="back">
+                        <div class="im"></div>
+                    </div>
+                </div>
+                <div class="inside">
+                    <h1>Романтика</h1>
+                    <p class="in">Жанр, который сосредоточен на страсти, эмоциях и романтических переживаниях главных героев и истории их любви, которая может проходить через свидания, ухаживания и брак.</p>
+                    <button onclick="location.href='catalog.html'">Подробнее >></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="genre_card">
+            <div class="content" onmouseover="On(2)" onmouseout="Off(2)">
+                <div class="outside">
+                    <div class="front">
+                        <div class="image">
+                            <img src="Genres/future.png" class="img">
+                        </div>
+                        <p class="genre">Фантастика</p>
+                    </div>
+                    <div class="back">
+                        <div class="im"></div>
+                    </div>
+                </div>
+                <div class="inside">
+                    <h1>Фантастика</h1>
+                    <p class="in">Жанр, объединяющий художественные произведения, в которых повествуется о событиях, мирах и героях, нарушающих границы реальности.</p>
+                    <button onclick="location.href='catalog.html'">Подробнее >></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="genre_card">
+            <div class="content" onmouseover="On(3)" onmouseout="Off(3)">
+                <div class="outside">
+                    <div class="front">
+                        <div class="image">
+                            <img src="Genres/horror.png" class="img">
+                        </div>
+                        <p class="genre">Хоррор</p>
+                    </div>
+                    <div class="back">
+                        <div class="im"></div>
+                    </div>
+                </div>
+                <div class="inside">
+                    <h1>Хоррор</h1>
+                    <p class="in">Жанр современного искусства, который предназначен устрашить, напугать, шокировать или вызвать отвращение у своих читателей или зрителей, вызвав у них чувства ужаса и шока.</p>
+                    <button onclick="location.href='catalog.html'">Подробнее >></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="genre_card">
+            <div class="content" onmouseover="On(4)" onmouseout="Off(4)">
+                <div class="outside">
+                    <div class="front">
+                        <div class="image">
+                            <img src="Genres/masks.png" class="img">
+                        </div>
+                        <p class="genre">Комедия</p>
+                    </div>
+                    <div class="back">
+                        <div class="im"></div>
+                    </div>
+                </div>
+                <div class="inside">
+                    <h1>Комедия</h1>
+                    <p class="in">Жанр, состоящий из произведений, предназначенных для того, чтобы быть юмористическими или забавными, вызывая смех.</p>
+                    <button onclick="location.href='catalog.html'">Подробнее >></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="genre_card">
+            <div class="content" onmouseover="On(5)" onmouseout="Off(5)">
+                <div class="outside">
+                    <div class="front">
+                        <div class="image">
+                            <img src="Genres/sad.png" class="img">
+                        </div>
+                        <p class="genre">Драма</p>
+                    </div>
+                    <div class="back">
+                        <div class="im"></div>
+                    </div>
+                </div>
+                <div class="inside">
+                    <h1>Драма</h1>
+                    <p class="in">Жанр, в котором главный герой оказывается втянутым в серию событий, обычно связанных с насилием и физическими подвигами.</p>
+                    <button onclick="location.href='catalog.html'">Подробнее >></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="genre_card">
+            <div class="content" onmouseover="On(6)" onmouseout="Off(6)">
+                <div class="outside">
+                    <div class="front">
+                        <div class="image">
+                            <img src="Genres/пистолет.png" class="img">
+                        </div>
+                        <p class="genre">Боевик</p>
+                    </div>
+                    <div class="back">
+                        <div class="im"></div>
+                    </div>
+                </div>
+                <div class="inside">
+                    <h1>Боевик</h1>
+                    <p class="in">Жанр, в котором главный герой оказывается втянутым в серию событий, обычно связанных с насилием и физическими подвигами.</p>
+                    <button onclick="location.href='catalog.html'">Подробнее >></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="genre_card">
+            <div class="content" onmouseover="On(7)" onmouseout="Off(7)">
+                <div class="outside">
+                    <div class="front">
+                        <div class="image">
+                            <img src="Genres/search.png" class="img">
+                        </div>
+                        <p class="genre">Детектив</p>
+                    </div>
+                    <div class="back">
+                        <div class="im"></div>
+                    </div>
+                </div>
+                <div class="inside">
+                    <h1>Детектив</h1>
+                    <p class="in">Жанр, в основе которого лежит расследование преступления, сюжет сосредоточен именно на самом процессе разгадывания тайны личности и мотивов преступника.</p>
+                    <button onclick="location.href='catalog.html'">Подробнее >></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="sect3">
+    <h1 class="heads">Наши новинки</h1>
+    <div class="news">
+
+    </div>
+    <svg>
+        <filter id="wavy1">
+                <feTurbulence baseFrequency="0.02" numOctaves="5" type="fractalNoise" result="result1" />
+                <feDisplacementMap in2="result1" scale="20" result="result2" xChannelSelector="R" in="SourceGraphic" />
+                <feComposite in2="result2" in="SourceGraphic" operator="atop" result="fbSourceGraphic" />
+        </filter>
+    </svg>
+</section>
+<section class="sect4">
+    <h1 class="heads">Скидки</h1>
+    <div class="sales">
+
+    </div>
+</section>
+<section class="sect5">
+    <h1 class="heads">Популярное</h1>
+    <div class="populars">
+
+    </div>
+    <svg>
+        <filter id="wavy2">
+            <feTurbulence baseFrequency="0.2" numOctaves="5" type="fractalNoise" result="result1" />
+            <feDisplacementMap in2="result1" scale="20" result="result2" xChannelSelector="R" in="SourceGraphic" />
+            <feComposite in2="result2" in="SourceGraphic" operator="atop" result="fbSourceGraphic" />
+        </filter>
+    </svg>
+</section>
+
+
+
+<section class="sect7">
+    <h1 class="heads">О нас</h1>
+    <div class="about_us">
+        <div class="about_text">
+            <h1>Крупнейший книжный магазин</h1>
+            <h2>
+                <p>В нашем каталоге представлено свыше 60 000 товаров издательств, издательских брендов и т.д. Ubook одним из первых получает книжные новинки ведущих российских издательств и предлагает их покупателям по лучшей цене.</p>
+                <p>На книги, которые только планируются к выходу, доступен предзаказ. В нашем ассортименте вы найдёте художественную и бизнес-литературу, товары для хобби и творчества, детские книги, учебники, научно-популярную литературу, офисные и канцелярские принадлежности, издания с автографами известных писателей и другую продукцию.</p>
+                <p>Мы регулярно проводим интересные акции и конкурсы, участие в которых гарантирует выгодные покупки. Наши клиенты также могут рассчитывать на персональные скидки и подарки.</p>
+            </h2>
+        </div>
+        <img src="Another/books_about.png">
+    </div>
+</section>
+<section class="sect6">
+    <h1 class="heads">Где нас найти?</h1>
+    <div class="markets">
+        <div class="market"><p class="market_name">Центральный Детский Магазин</p></div>
+        <div class="market"><p class="market_name">Торгово-развлекательный центр "Авиапарк"</p></div>
+        <div class="market"><p class="market_name">ТРК «Вегас Каширское шоссе»</p></div>
+        <div class="market"><p class="market_name">Гостиный Двор</p></div>
+        <div class="market"><p class="market_name">Центральный рынок на Цветном бульваре</p></div>
+        <div class="market"><p class="market_name">Атриум, торгово-развлекательный центр</p></div>
+        <div class="market"><p class="market_name">ТРЦ Columbus</p></div>
+        <div class="market"><p class="market_name">Охотный ряд</p></div>
+    </div>
+</section>
+<footer id="footer">
+    <div class="footer_over">
+        <div class="footer_sector">
+            <h4 class="footer_head">Полезные ссылки</h4>
+            <div class="footer_listing">
+                <p class="footer_text1">Доставка</p>
+                <p class="footer_text1">Оплата</p>
+                <p class="footer_text1">Акции</p>
+                <p class="footer_text1">Политика конфиденциальности</p>
+            </div>
+        </div>
+        <div class="footer_sector">
+            <h4 class="footer_head">Оплата</h4>
+            <div class="footer_listing">
+                <p class="footer_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper justo, nec, pellentesque.</p>
+                <div class="partners">
+                    <img src="Footer\visa.png" class="partner">
+                    <img src="Footer\mastercard.png" class="partner">
+                </div>
+            </div>
+        </div>
+        <div class="footer_sector">
+            <h4 class="footer_head">Контакты</h4>
+            <div class="footer_listing">
+                <p class="footer_text2">8 (963) 760-39-42</p>
+                <p class="footer_text2">8 (812) 234-56-55</p>
+                <p class="footer_text2">ojjo@ojjo.ru</p>
+            </div>
+        </div>
+        <div class="footer_sector">
+            <h4 class="footer_head">Социальные сети</h4>
+            <div class="footer_listing">
+                <p class="footer_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper justo, nec, pellentesque.</p>
+                <div class="footer_net">
+                    <img src="Footer\youtube.png" class="footer_n">
+                    <img src="Footer\vk.png" class="footer_n">
+                    <img src="Footer\facebook.png" class="footer_n">
+                    <img src="Footer\telegram.png" class="footer_n">
+                    <img src="Footer\e.png" class="footer_n">
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="footer_under">
+        2021© Student MIREA. ALL RIGHTS RESERVED
+    </p>
+</footer>
+<script src="Header/make_header.js"></script>
+<script src="posts.js"></script>
+<script src="Header/lupa.js"></script>
+<script src="Header/header_size.js"></script>
+<script src="Header/entry_registration.js"></script>
+<script src="Header/panel.js"></script>
+<script>
+    var content = document.querySelectorAll(".popular_genres .content")
+    var t = "0.2s"
+    if (navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i)) {
+        content.forEach(item => {
+            item.style.transition = "0s"
+        })
+        t = "0s"
+    }
+
+    function On(p){
+        content[p].style.transitionDelay = t
+    }
+    function Off(p){
+        content[p].style.transitionDelay = "0s"
+    }
+
+</script>
+</body>
+</html>

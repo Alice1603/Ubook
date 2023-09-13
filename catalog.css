@@ -1,0 +1,90 @@
+html, body{
+    box-sizing: border-box;
+    background: #222229;
+    margin: 0;
+    height: 100%;
+    scrollbar-width: thin;
+    scrollbar-color: #636373 #222229;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*==================================================================*/
+.catalog{
+    color: ghostwhite;
+    font-family: sans-serif;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0 20px;
+    flex-wrap: wrap;
+}
+.card{
+    position: relative;
+    margin: 20px 40px 0;
+    height: 400px;
+    width: 225px;
+    padding: 15px;
+    aspect-ratio: 9/16;
+    border-radius: 20px;
+    background: rgba(135, 206, 250, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.img{
+    z-index: 4;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+    background-position: center;
+    background-size: cover;
+}
+
+.name{
+    margin: 10px 0 0;
+    text-align: center;
+    font-size: 22px;
+}
+.author{
+    margin: 0;
+    text-align: center;
+    font-size: medium;
+    font-weight: 100;
+    opacity: 0.8;
+}
+.buy{
+    margin: 0;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.price{
+    padding: 3px 12px;
+    background: rgba(135, 206, 250, 0.6);
+    border-radius: 15px;
+    color: ghostwhite;
+    font-size: 0.75em;
+    border: 2px solid rgba(135, 206, 250, 0.3);
+}
+
+.price:hover{
+    transform: scale(1.02);
+}
+
+.price:active{
+    background: rgba(135, 206, 250, 0.9);
+}
